@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Generation System</title>
+  <link rel="stylesheet" href="sdc.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Invoice Generation System</h1>
+    <form id="invoiceForm" class="invoice-form">
+      <h2>Customer Details</h2>
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" placeholder="Enter customer name" required>
+      
+      <label for="customerAddress">Address:</label>
+      <textarea id="customerAddress" placeholder="Enter customer address" required></textarea>
+
+      <h2>Item Details</h2>
+      <div id="itemSection">
+        <div class="item">
+          <label>Description:</label>
+          <input type="text" class="itemDesc" placeholder="Enter item description" required>
+          
+          <label>Quantity:</label>
+          <input type="number" class="itemQty" min="1" placeholder="1" required>
+          
+          <label>Price per Unit ($):</label>
+          <input type="number" class="itemPrice" min="0" step="0.01" placeholder="0.00" required>
+          
+          <label>Tax Rate (%):</label>
+          <input type="number" class="itemTax" min="0" max="100" placeholder="0" required>
+        </div>
+      </div>
+      
+      <button type="button" id="addItem">Add More Items</button>
+      <button type="submit">Generate Invoice</button>
+    </form>
+
+    <div id="invoice" class="invoice hidden">
+      <h2>Generated Invoice</h2>
+      <div id="customerDetails"></div>
+      <table id="invoiceTable">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price per Unit</th>
+            <th>Tax (%)</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="totalAmount"></div>
+      <button id="printInvoice">Print Invoice</button>
+    </div>
+  </div>
+  <script src="sdc.js"></script>
+</body>
+</html>

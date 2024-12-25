@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  h2 {
+    color: #555;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button#addItem {
+    background-color: #28a745;
+  }
+  
+  button#addItem:hover {
+    background-color: #218838;
+  }
+  
+  .invoice {
+    margin-top: 30px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  #totalAmount {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: right;
+  }
+  
+  #totalAmount strong {
+    color: #007bff;
+  }
